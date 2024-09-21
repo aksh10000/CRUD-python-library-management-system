@@ -1,11 +1,14 @@
 # 🚀CRUD-python-library-management-system🚀
 ## Top features of this project incluedes:
   1. This project involves creating a Library management system that supports the core CRUD operations.
-  2. This project leverages the Object Oriented Design of python and makes the management of different real world entites very convinient.
-  3. Leverages the use of JSON file storage making information non volatile and reusable and non dependent on RAM.
-  4. Leverages the CLI for user friendly minimalistic interface, making the interaction with the file really convinient.
-  5. Utilizes various error handling and input validation mechanisms so that the code does not break on edge cases.
-  6. Doesn't facilitate easy extension or modification.
+  2. Logging is done in `transactions.json` file and can also be checked by entering `20` in the menu driven flow to list all the transactions.
+  3. Check in and check out functionality is also included.
+  4. Books can be tracked by searching them on the basis of title, author, id or author.
+  5. This project leverages the Object Oriented Design of python and makes the management of different real world entites very convinient.
+  6. Leverages the use of JSON file storage making information non volatile and reusable and non dependent on RAM.
+  7. Leverages the CLI for user friendly minimalistic interface, making the interaction with the file really convinient.
+  8. Utilizes various error handling and input validation mechanisms so that the code does not break on edge cases.
+  9. Doesn't facilitate easy extension or modification.
 # Tasks that this project fulfills:
 ## Library Management System
 ### 1. Object-Oriented Design
