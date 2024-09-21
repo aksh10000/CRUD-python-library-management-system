@@ -9,6 +9,7 @@
   7. Leverages the CLI for user friendly minimalistic interface, making the interaction with the file really convinient.
   8. Utilizes various error handling and input validation mechanisms so that the code does not break on edge cases.
   9. Doesn't facilitate easy extension or modification.
+  10. Plenty of documentation using docstring and commenting
 # Tasks that this project fulfills:
 ## Library Management System
 ### 1. Object-Oriented Design
