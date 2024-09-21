@@ -9,6 +9,7 @@ import jsonpickle
 T = TypeVar('T')
 #creating a storage that will be of the following types: User, Magazine, Book, Transaction
 class Storage(Generic[T]):
+    '''Used to implement a generic storage class'''
     #initailizing the Storage class
     def __init__(self, file_name: str):
         self.file_name = file_name
@@ -57,6 +58,7 @@ class Storage(Generic[T]):
         return (value for value in self.data.values())
 #initialize the book storage by inheriting the storage class
 class BookStorage(Storage[Book]):
+    '''Inherits the storage class to implement the book storage logic'''
     def __init__(self):
         #initialize the parent class
         super().__init__('books.json')
@@ -68,6 +70,7 @@ class BookStorage(Storage[Book]):
                 query.lower() in book.isbn.lower()]
 #initialize the magazine storage by inheriting the storage class 
 class MagazineStorage(Storage[Magazine]):
+    '''Inherits the storage class to implement the magazine storage logic'''
     def __init__(self):
         #initialize the parent constructor
         super().__init__('magazines.json')
@@ -79,6 +82,7 @@ class MagazineStorage(Storage[Magazine]):
                 query.lower() in magazine.publisher.lower()]
 #initialize the user storage
 class UserStorage(Storage[User]):
+    '''inherits the storage class in order to implement the user storage logic'''
     def __init__(self):
         #initialize the parent constructor
         super().__init__('users.json')
@@ -91,6 +95,7 @@ class UserStorage(Storage[User]):
                 ]
 #initalize the transaction manager
 class TransactionStorage(Storage[Transaction]):
+    '''inherits the storage class in order to implement transaction storage logic'''
     def __init__(self):
         #initialize the parent constructor
         super().__init__('transactions.json')
