@@ -87,5 +87,22 @@
 ### 12. Additional Requirements
 
 ✅ File-based storage (JSON) is implemented in storage.py
+
 ✅ The application allows for future expansions (e.g., due dates, late fees)
+
 ✅ Simple logging of operations is implemented through the Transaction class
+
+# Steps to replicate this on a local machine:
+1. Clone this repo.
+2. Install the requirements: `pip install -r requirements.txt`
+3. Run the `main.py` file using `python main.py`
+# Working of the app:
+![image](https://github.com/user-attachments/assets/1c41ce59-d5c0-4a35-8b53-f9644e5ed424)
+
+![image](https://github.com/user-attachments/assets/7b457eb9-a781-471d-a0dd-860f9f7655b6)
+
+![image](https://github.com/user-attachments/assets/f4d2b925-d3b0-48ea-a0a0-d38ad8ff4b89)
+
+![image](https://github.com/user-attachments/assets/7cf4cadf-c92d-44a4-b163-ff073a6d64a2)
+
+![image](https://github.com/user-attachments/assets/00cbf449-dc14-43e1-bb9e-3dc8d1aa91b6)
