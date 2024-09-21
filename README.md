@@ -27,11 +27,13 @@
 ### 2. Encapsulation
 
 ✅ Data and behaviors are properly encapsulated within classes
+
 ✅ Access to data is controlled through methods rather than directly
 
 ### 3. Readability
 
 ✅ The code is easy to read with meaningful variable and method names
+
 ✅ Consistent indentation and clear structure are maintained
 
 ### 4. Modularity
@@ -54,27 +56,32 @@
 
 ### 7. Use of Pythonic Idioms and Features
 
-✅ The code uses Pythonic constructs like list comprehensions(used at various places throughout the app), type hinting(for defining the return types of function and data type of variables), context managers (when opening files) and  generator expressions(for lazy loading while return the list of items), decorators (`@property` and `@abstractmethod` are used at various places),
+✅ The code uses Pythonic constructs like list comprehensions(used at various places throughout the app), type hinting(for defining the return types of function and data type of variables), context managers (when opening files) and  generator expressions(for lazy loading while return the list of items), decorators (`@property` and `@abstractmethod` are used at various places)
+
 ✅ Standard library modules are used appropriately (e.g., json, abc, uuid)
 
 ### 8. Design Patterns and Best Practices
 
 ✅ The code follows the DRY principle and SOLID principles
+
 ✅ A simple Factory pattern is used in the Storage class
 
 ### 9. Testing and Validation
 
 ✅ Unit testing is done and various edge cases are covered with the help of error handling mechanisms
+
 ✅ Basic input validation is implemented in the CLI
 
 ### 10. Scalability and Maintainability
 
 ✅ The codebase is structured to handle future requirements (e.g., adding new item types)
+
 ✅ The modular design makes it easy to modify or extend parts of the system
 
 ### 11. User Interface and Experience
 
 ✅ The CLI design is user-friendly and intuitive
+
 ✅ Clear prompts and a logical flow of operations are provided
 
 ### 12. Additional Requirements
