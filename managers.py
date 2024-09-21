@@ -7,16 +7,22 @@ from storage import Storage, BookStorage, MagazineStorage, UserStorage, Transact
 
 #defining error handling classes
 class LibraryException(Exception):
+    '''
+        Used to handle exceptions
+    '''
     pass
 #inheriting LibraryException inside ItemNotFoundError class
 class ItemNotFoundError(LibraryException):
+    '''Used to handle item not found exception'''
     pass
 #inheriting LibraryException inside ItemNotAvailableError class
 class ItemNotAvailableError(LibraryException):
+    '''Used to handle item not available exception'''
     pass
 
 #generic ItemManager class that is inherited by BookManager and MagazineManager classes
 class ItemManager:
+    '''Used as a parent class by Magazine manager and Book managernclasses'''
     #instructor for initializing, item will be either 'Book' or 'Magazine' class and storage will either be book storage or magazine storage
     def __init__(self, item_class: Type[Item], storage_class: Type[Storage]):
         self.item_class = item_class
@@ -56,6 +62,7 @@ class ItemManager:
         return self.storage.search(query)
 #inherits item manager class
 class BookManager(ItemManager):
+    
     def __init__(self):
         #initializing parent class
         super().__init__(Book, BookStorage)
@@ -67,6 +74,7 @@ class MagazineManager(ItemManager):
 
 #manages the user storage
 class UserManager:
+    '''Used to implement User manager that is going to manage the users'''
     def __init__(self):
         #initializing an instance of UserStorage class
         self.storage = UserStorage()
@@ -107,6 +115,7 @@ class UserManager:
         return self.storage.search(query)
 #transaction manager class
 class TransactionManager:
+    '''Used for management of transactions'''
     def __init__(self):
         #initialize the transaction manager
         self.storage = TransactionStorage()
@@ -122,6 +131,7 @@ class TransactionManager:
         return self.storage.list_all()
 
 class LibraryManager:
+    '''Used for management of users, magazines, books and transactions'''
     #intialize the library manager
     def __init__(self):
         #initialize different managers for using library manager
