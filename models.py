@@ -6,6 +6,7 @@ from datetime import datetime
 from typing import List, Optional, Dict
 #set the abstract class base using ABC, necessary to define the abstract functions
 class Item(ABC):
+    '''acts as a parent class of book and magazine'''
     #initialize the instructor
     def __init__(self, item_id: str, title: str):
         self._item_id = item_id
@@ -36,6 +37,7 @@ class Item(ABC):
         pass
 
 class Book(Item):
+    '''Used to implement the details of a book'''
     #initialize the child and parent class constructor
     def __init__(self, item_id: str, title: str, author: str, isbn: str):
         super().__init__(item_id, title)
@@ -57,6 +59,7 @@ class Book(Item):
         return "Book"
 
 class Magazine(Item):
+    '''Used to implement the details of a magazine'''
     def __init__(self, item_id: str, title: str, issue_number: str, publisher: str):
         #initialize the child and parent class constructor
         super().__init__(item_id, title)
@@ -78,6 +81,7 @@ class Magazine(Item):
         return "Magazine"
 
 class User:
+    '''Used to implement the details of a user'''
     #initialize the constructor
     def __init__(self, user_id: str, name: str, email: str):
         self._user_id = user_id
@@ -116,6 +120,7 @@ class User:
             print(f"{item.title} was not borrowed, so it can not be returned")
 
 class Transaction:
+    '''Used to implement the details of a transaction'''
     #initialize the constructor
     def __init__(self, user: User, item: Item, transaction_type: str):
         self._user = user
