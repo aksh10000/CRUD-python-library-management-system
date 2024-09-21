@@ -6,6 +6,9 @@ from managers import LibraryManager,LibraryException,ItemNotFoundError,ItemNotAv
 from models import Book, User, Magazine
 
 class CLI:
+    '''
+        cli class is implemented to initialize the library management class and interact with it
+    '''
     def __init__(self):
         #initialize the library manager
         self.library_manager = LibraryManager()
