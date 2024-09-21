@@ -1,5 +1,5 @@
 # 🚀CRUD-python-library-management-system🚀
-## Top features of this project incluedes:
+## Top features of this project includes:
   1. This project involves creating a Library management system that supports the core CRUD operations.
   2. Logging is done in `transactions.json` file and can also be checked by entering `20` in the menu driven flow to list all the transactions.
   3. Check in and check out functionality is also included.
