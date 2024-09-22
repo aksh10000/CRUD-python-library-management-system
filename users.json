@@ -1,0 +1,25 @@
+{
+  "455cdcf2-f534-4112-ab1e-345a7eb7a410": {
+    "py/object": "models.User",
+    "_user_id": "455cdcf2-f534-4112-ab1e-345a7eb7a410",
+    "_name": "aksh",
+    "_email": "aksh@email.com",
+    "_borrowed_items": {
+      "ce3a8983-614d-458b-8b2e-3f1f973a77dd": {
+        "py/object": "models.Book",
+        "_item_id": "ce3a8983-614d-458b-8b2e-3f1f973a77dd",
+        "_title": "hindi",
+        "_is_available": false,
+        "_author": "ramesh",
+        "_isbn": "89756"
+      }
+    }
+  },
+  "8b9d6ef1-b8aa-47c5-97c3-3d2e07bf7048": {
+    "py/object": "models.User",
+    "_user_id": "8b9d6ef1-b8aa-47c5-97c3-3d2e07bf7048",
+    "_name": "Neewar",
+    "_email": "neewar@gmail.com",
+    "_borrowed_items": {}
+  }
+}
